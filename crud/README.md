@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+A full-stack CRUD (Create, Read, Update, Delete) web application built with React (frontend) and Express.js (backend). It includes:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+User creation with validation
 
-## Available Scripts
+Search functionality (client-side)
 
-In the project directory, you can run:
+Toast notifications
 
-### `npm start`
+Edit/Delete users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Loading spinners
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clean UI with dropdowns for role selection
 
-### `npm test`
+How to Run Locally
+Requires Node.js installed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the Repository
+bash
+Copy code
+git clone https://github.com/Anshman01/crud-app.git
+cd crud-app
+2. Install Dependencies
+bash
+Copy code
+npm install
+This installs both frontend and backend dependencies if you're using a monorepo structure.
 
-### `npm run build`
+3. Start the App (Both Frontend + Backend)
+bash
+Copy code
+npm run dev
+Frontend runs on: http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Backend API runs on: http://localhost:8000/api/users
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React proxy forwards requests to Express backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Features
+Add, Edit, and Delete users
 
-### `npm run eject`
+Search users by name, email, or role (searches from table data)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Form validation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clean UI with dropdown for roles
+Toast notifications for errors and actions
+Spinner while loading data
+Fully client-side search
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Assumptions & Decisions
+Using a client-side search only, no server filtering
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In-memory data unless connected to MongoDB
 
-## Learn More
+Data fetching is via Axios on page load
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Roles are hardcoded dropdown values for simplicity
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Scripts
+Script	Description
+npm start	Starts frontend only
+npm run server	Starts backend only (port 8000)
+npm run dev	Starts both concurrently
 
-### Code Splitting
+Tech Stack
+Frontend: React, Axios, Toastify, React Spinners
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Backend: Node.js, Express.js
 
-### Analyzing the Bundle Size
+Styling: CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Dev Tools: Nodemon, Concurrently
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
