@@ -16,19 +16,14 @@ How to Run Locally
 Requires Node.js installed.
 
 1. Clone the Repository
-bash
-Copy code
 git clone https://github.com/Anshman01/crud-app.git
 cd crud-app
+
 2. Install Dependencies
-bash
-Copy code
 npm install
 This installs both frontend and backend dependencies if you're using a monorepo structure.
 
 3. Start the App (Both Frontend + Backend)
-bash
-Copy code
 npm run dev
 Frontend runs on: http://localhost:3000
 
