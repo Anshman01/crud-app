@@ -1,0 +1,110 @@
+/* App.css */
+
+body {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+input, select {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+td {
+  color: #ccc;
+}
+
+td button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+td button:first-child {
+  background-color: #27ae60;
+}
+
+td button:last-child {
+  background-color: #e74c3c;
+}
+
+td button:hover {
+  opacity: 0.9;
+}
+
+.Toastify__toast {
+  background: #333 !important;
+  color: #fff !important;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #f0f0f0;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
